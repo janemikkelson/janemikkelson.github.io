@@ -3,24 +3,22 @@
     <title>
         MIS 3033 October 11 Jane Mikkelson
     </title>
-  <style>
-      #maindiv
-      {
-          background-color: aliceblue;
-          width: 800px;
-          height: 500px;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-          align-items: flex-end;
-          margin-top:50px;
-      }
-     
-     
-         
+    <style>
+        #maindiv {
+            background-color: aliceblue;
+            width: 800px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-top: 50px;
+        }
 
-        .d1
-        {
+
+
+
+        .d1 {
             width: 100px;
             height: 120px;
             margin-left: 10px;
@@ -28,86 +26,135 @@
             background-color: dodgerblue;
         }
 
-        #webdiv 
-        {
+        #webdiv {
             background-color: antiquewhite;
             width: 1000px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        #footerdiv
-        {
-            background-color:aliceblue;
-            height:50px;
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-            align-items:center;
-
-            border-radius:10px;
-            color:darkgrey;
-
+        #footerdiv {
+            background-color: aliceblue;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            color: darkgrey;
         }
-        #bodydiv
-        {
-            background-color:lightcoral;
-            display:flex;
 
+        #bodydiv {
+            background-color: lightcoral;
+            display: flex;
         }
-        #leftdiv
-        {
-            background-color:yellow;
+
+        #leftdiv {
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: column;
         }
-        #rightdiv
-        {
-            background-color:lightpink;
-            display:flex;
-            flex-direction:column;
-            border-radius:20px;
-            border-width:2px;
-            border-style:solid;
-            border-color:darkgrey;
-            align-items:center;
+
+        #rightdiv {
+            background-color: burlywood;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: darkgrey;
+        }
+
+        #updiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #downdiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #title1 {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightblue;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
     <div id="webdiv">
-        web page
-        <div id="leftdiv">
-            left
+        
+             <div id="headerdiv" style="display:flex;flex-direction:row;justify-content:center;">
+                 <div style="font-size:30pt;color:dodgerblue;text-transform:uppercase;font-weight:bold;">
+                     I love Programming
+                 </div>
+             </div>
+        <div>
+            <img src="a.svg" style="height:100px;"/>
         </div>
 
-        <div id="rightdiv">
-            <div style="color:dodgerblue;font-size:20pt;font-weight:bold;"> I love MIS 3033</div>
-        </div>
-        <img style="width:400px;" src="b.svg"/>
+
+
+        <div id="bodydiv">
+            <div id="leftdiv">
+                <div id="updiv" style="width:480px;background-color:lightpink;">
+                    <span id="title1">
+                        What I already learned:
+                    </span>
+                    <ol>
+                        <li>C#</li>
+                        <li>C# Entity Framework</li>
+                        <li>Database SQlite</li>
+                        <li>HTML & CSS</li>
+
+                    </ol>
+                </div>
+                <div id="downdiv" style="width:480px;background-color:aquamarine;">
+                    <span id="title2">
+                        What I am going to learn next:
+                    </span>
+                    <ol>
+                        <li>JavaScript </li>
+                        <li>BootStap</li>
+                        <li>ASP.NET MVC</li>
+                        <li>Web Rest API</li>
+                    </ol>
+
+                </div>
+            </div>
+
+
+
+            <div id="rightdiv">
+                <div style="color:dodgerblue;font-size:20pt;font-weight:bold;"> I love MIS 3033</div>
+            </div>
+            <img style="width:400px;" src="b.svg" />
+
+            <div id="footerdiv">
+                <span>
+                    Designed and Developed by Jane Mikkelson for MIS 3033 Exam 2
+                </span>
+            </div>
+
+
+
+
+            <div id="maindiv">
+                <div class="d1">div1</div>
+                <div class="d1">div2</div>
+                <div class=" d1">div3</div>
+
+            </div>
+     
         
-       <div id="footerdiv">
-        <span>
-            Designed and Developed by Jane Mikkelson for MIS 3033 Exam 2
-        </span>
-       </div>
-
-
-    
-    
-    </div>
-
-   
-        
-         
-
-
-       <div id="maindiv">
-        <div class="d1">div1</div>
-        <div class="d1">div2</div>
-        <div class=" d1">div3</div>
-
-    </div>
-
-
+         </div>
+   </div>
 </body>
 </html>
